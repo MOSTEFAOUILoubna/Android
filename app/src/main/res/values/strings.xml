@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ApplicationTest</string>
+    <string-array name="categories">
+        <item> Fruits</item>
+        <item>Legumes</item>
+        <item>Farine et produits à base de farine</item>
+        <item> Pain et produits de boulangerie </item>
+    </string-array>
+
+</resources>
