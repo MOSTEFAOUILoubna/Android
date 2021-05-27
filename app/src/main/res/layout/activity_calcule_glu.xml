@@ -2,9 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.home.activity.fragments.CalculeGluFragment">
+    tools:context=".activities.home.activity.fragments.AddAlimentFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -17,10 +18,12 @@
             android:layout_marginTop="16dp"
             android:text="@string/calculeGLUFragementLabel"
             android:textSize="16sp"
+            android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="411dp"
@@ -34,16 +37,16 @@
         </androidx.recyclerview.widget.RecyclerView>
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/addAlimentToPlat"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginBottom="36dp"
-            android:contentDescription="@string/calculeGLUFragementLabel"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/calculeGLU"
             android:src="@drawable/ic_baseline_add_shopping_cart_24"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

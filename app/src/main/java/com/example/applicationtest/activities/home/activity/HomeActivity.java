@@ -4,13 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
+import com.example.applicationtest.MainActivity;
 import com.example.applicationtest.R;
-import com.example.applicationtest.activities.home.activity.fragments.CalculeGluFragment;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -19,15 +17,11 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button startButton = findViewById(R.id.calculeButton);
-        startButton.setOnClickListener(new View.OnClickListener() {
+        Button clculeGluButton = findViewById(R.id.calculeButton);
+        clculeGluButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-               // startButton.setVisibility(View.INVISIBLE);
-                Fragment calculGluFragment = new CalculeGluFragment();
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragmentContainer, calculGluFragment, calculGluFragment.getClass().getSimpleName())
-                        .addToBackStack(null)
-                        .commit();
+                Intent intent = new Intent(HomeActivity.this,CalculeGluActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -35,3 +29,16 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 }
+/*
+*
+                FragmentManager fm = getSupportFragmentManager();
+                CalculeGluFragment calculGluFragment = CalculeGluFragment.newInstance();
+                calculGluFragment.show(fm, calculGluFragment.getClass().getSimpleName());
+                * */
+
+
+                /*Fragment calculGluFragment = new CalculeGluFragment();
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentContainer, calculGluFragment, calculGluFragment.getClass().getSimpleName())
+                        .addToBackStack(null)
+                        .commit();*/
