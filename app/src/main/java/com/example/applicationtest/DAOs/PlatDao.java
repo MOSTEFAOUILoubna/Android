@@ -1,9 +1,11 @@
-package com.example.applicationtest;
+package com.example.applicationtest.DAOs;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Update;
+
+import com.example.applicationtest.Models.Plat;
 
 @Dao
     public interface PlatDao {

@@ -1,4 +1,4 @@
-package com.example.applicationtest;
+package com.example.applicationtest.Models;
 
 
 import androidx.room.Entity;

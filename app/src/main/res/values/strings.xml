@@ -1,10 +1,6 @@
 <resources>
-    <string name="app_name">ApplicationTest</string>
-    <string-array name="categories">
-        <item> Fruits</item>
-        <item>Legumes</item>
-        <item>Farine et produits à base de farine</item>
-        <item> Pain et produits de boulangerie </item>
-    </string-array>
-
+    <string name="app_name">Get healthy</string>
+    <string name="calculeGLU">Calcule GLU </string>
+    <string name="homeText">We provide you the best service </string>
+    <string name="calculeGLUFragementLabel">Please Enter your PLATS</string>
 </resources>

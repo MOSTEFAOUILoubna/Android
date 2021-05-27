@@ -1,22 +1,27 @@
-package com.example.applicationtest;
+package com.example.applicationtest.DataBase;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
+import com.example.applicationtest.DAOs.AlimentsDao;
+import com.example.applicationtest.DAOs.CategoriesDao;
+import com.example.applicationtest.DAOs.PlatDao;
+import com.example.applicationtest.Models.Aliments;
+import com.example.applicationtest.Models.Categories;
+import com.example.applicationtest.Models.Plat;
+
 import java.util.List;
 
 public class Repository {
 
-    PlatDao pd ;
-    CategoriesDao cd;
-    AlimentsDao ad;
-    LiveData<List<Categories>> listcategories;
-    LiveData<List<Aliments>> listaliments;
-
-    //LiveData<List<Categories>> listcategorie;
-    //LiveData<List<Aliments>> listaliment;
+    private PlatDao pd ;
+    private CategoriesDao cd;
+    private AlimentsDao ad;
+    private LiveData<List<Categories>> listcategories;
+    private LiveData<List<Aliments>> listaliments;
+    private LiveData<List<Plat>> listPlats;
 
 
 
@@ -95,7 +100,7 @@ public class Repository {
     //// POUR INSERER
 
 
-    private static class InsertAsync extends AsyncTask< Categories, Void, Void> {
+    private static class InsertAsync extends AsyncTask<Categories, Void, Void> {
         CategoriesDao cd;
         public InsertAsync(CategoriesDao cd) {
             this.cd = cd;

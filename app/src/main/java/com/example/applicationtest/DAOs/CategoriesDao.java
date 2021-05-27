@@ -1,4 +1,4 @@
-package com.example.applicationtest;
+package com.example.applicationtest.DAOs;
 
 
 import androidx.lifecycle.LiveData;
@@ -7,6 +7,8 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.example.applicationtest.Models.Categories;
 
 import java.util.List;
 
